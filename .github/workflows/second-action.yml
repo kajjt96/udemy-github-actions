@@ -1,4 +1,7 @@
-name: Test Project
+# Workflows
+#   Jobs
+#     Steps
+name: Test & Deploy Project
 on: push
 
 jobs:
@@ -18,3 +21,25 @@ jobs:
 
       - name: Run tests
         run: cd second-action && npm test
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: cd second-action && npm ci
+
+      - name: Build project
+        run: |
+          cd second-action
+          npm run build
+
+      - name: Deploy
+        run: echo "Deploying ..."
