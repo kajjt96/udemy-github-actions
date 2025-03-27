@@ -2,7 +2,7 @@
 #   Jobs
 #     Steps
 name: Test & Deploy Project
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
   test:
