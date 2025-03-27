@@ -27,6 +27,7 @@ jobs:
           npm test
   
   deploy:
+    needs: test # use brackets for multiple
     runs-on: ubuntu-latest
     steps:
       - name: Get code
