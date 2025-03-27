@@ -15,6 +15,7 @@ jobs:
 
       - name: Navigate to React app
         run: |
+          ls
           cd /second-action
           ls
   
