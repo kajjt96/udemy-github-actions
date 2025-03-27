@@ -1,3 +1,3 @@
-# Important Instructions
+# Getting Started with GitHub Actions
 
-This is a demo repository for practicing Git & GitHub.
+This repository will be used to get started with GitHub Actions!
