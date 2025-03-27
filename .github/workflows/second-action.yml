@@ -13,6 +13,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Navigate to React app
+        run: cd second-action
+  
       - name: Install dependencies
         run: npm ci
 
