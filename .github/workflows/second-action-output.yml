@@ -1,0 +1,9 @@
+name: second-action >> Output information
+on: workflow_dispatch
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub context
+        run: echo "${{ toJSON(github) }}" # github actions context/functions

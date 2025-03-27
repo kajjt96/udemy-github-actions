@@ -1,7 +1,7 @@
 # Workflows
 #   Jobs
 #     Steps
-name: Test & Deploy Project
+name: second action >> Test & Deploy Project
 on: [push, workflow_dispatch]
 
 jobs:
