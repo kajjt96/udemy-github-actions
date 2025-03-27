@@ -12,3 +12,6 @@ jobs: # rw
         run: echo "Hello World!" # rw
       - name: Print goodbye # rw
         run: echo "Done - bye!" # rw
+        # run: | # use the pipe to run multiple commands
+        #   echo "First output"
+        #   echo "Second output"
