@@ -1,0 +1,14 @@
+# Workflows
+#   Jobs
+#     Steps
+# rw = name is reserved word
+name: First Workflow # rw
+on: workflow_dispatch # rw >> when it will be executed (trigger)
+jobs: # rw
+  first-job: # !rw
+    runs-on: ubuntu-latest # rw >> ubuntu, windows, etc
+    steps: # rw
+      - name: Print greeting # rw
+        run: echo "Hello World!" # rw
+      - name: Print goodbye # rw
+        run: echo "Done - bye!" # rw
