@@ -13,11 +13,13 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Navigate to React app
         run: |
-          cd second-action
+          cd /second-action
           ls
-          npm ci
+  
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run tests
         run: npm test
