@@ -16,7 +16,7 @@ jobs:
       - name: Navigate to React app
         run: |
           ls
-          cd /second-action
+          cd second-action
           ls
   
       - name: Install dependencies
