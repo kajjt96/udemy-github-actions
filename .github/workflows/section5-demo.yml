@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: dist-files
+          name: dist-files # creates "dist-files.zip" with the dist folder and package.json file
           path: |
             section5/dist
             section5/package.json
@@ -47,5 +47,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Get build artifcats
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: Output contents
+        run: |
+          echo "Contents of the dist folder:"
+          ls -l dist
+          echo ""
       - name: Deploy
         run: echo "Deploying..."
