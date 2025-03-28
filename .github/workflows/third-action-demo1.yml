@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: third-action >> Events Demo 1
 on: # events & event types
   pull_request:
     types: opened
