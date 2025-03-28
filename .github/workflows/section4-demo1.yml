@@ -28,17 +28,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd third-action
+          cd section4
           npm ci
 
       - name: Test code
         run: |
-          cd third-action
+          cd section4
           npm run test
 
       - name: Build code
         run: |
-          cd third-action
+          cd section4
           npm run build
 
       - name: Deploy project

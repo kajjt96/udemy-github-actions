@@ -18,12 +18,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd second-action
+          cd section3
           npm ci
 
       - name: Run tests
         run: |
-          cd second-action
+          cd section3
           npm test
   
   deploy:
@@ -40,12 +40,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd second-action
+          cd section3
           npm ci
 
       - name: Build project
         run: |
-          cd second-action
+          cd section3
           npm run build
 
       - name: Deploy

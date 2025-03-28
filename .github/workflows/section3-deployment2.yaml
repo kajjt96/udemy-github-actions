@@ -8,11 +8,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Install dependencies
         run: |
-          cd second-action
+          cd section3
           npm ci
       - name: Lint
         run: |
-          cd second-action
+          cd section3
           npm run lint
   test:
     needs: lint
@@ -22,11 +22,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Install dependencies
         run: |
-          cd second-action
+          cd section3
           npm ci
       - name: Test code
         run: |
-          cd second-action
+          cd section3
           npm run test
   deploy:
     needs: test
@@ -36,11 +36,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Install dependencies
         run: |
-          cd second-action
+          cd section3
           npm ci
       - name: Build code
         run: |
-          cd second-action
+          cd section3
           npm run build
       - name: Deploy code
         run: echo "Deploying..."
