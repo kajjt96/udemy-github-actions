@@ -2,7 +2,7 @@
 #   Jobs
 #     Steps
 # rw = name is reserved word
-name: first-action >> First Workflow # rw
+name: section1 >> First Workflow # rw
 on: workflow_dispatch # rw >> when it will be executed (this is a manual trigger)
 jobs: # rw
   first-job: # !rw

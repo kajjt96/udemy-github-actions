@@ -1,4 +1,4 @@
-name: second-action >> Output information
+name: section3 >> Output information
 on: workflow_dispatch
 
 jobs:

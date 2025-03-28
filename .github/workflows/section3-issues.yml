@@ -1,4 +1,4 @@
-name: second-action >> Handle issues
+name: section3 >> Handle issues
 on: issues
 jobs:
   output-info:

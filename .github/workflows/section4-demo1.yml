@@ -1,6 +1,6 @@
 # Forks do not trigger a workflow unless you are a collaborator!  They must be approved by a collaborator.
 # Adding this comment to YOUR code will skip the github workflow --> // my comment [skip ci] (or [skip actions])
-name: third-action >> Events Demo 1
+name: section4 >> Events Demo 1
 on: # events/types/filters
   pull_request:
     types: opened

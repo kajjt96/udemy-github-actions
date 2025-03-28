@@ -1,4 +1,4 @@
-name: first-action >> First Workflow Orig
+name: section1 >> First Workflow Orig
 on: workflow_dispatch
 jobs:
   first-job:

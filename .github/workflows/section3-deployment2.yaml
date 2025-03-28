@@ -1,4 +1,4 @@
-name: second-action >> Deployment Exercise 2
+name: section3 >> Deployment Exercise 2
 on: push
 jobs:
   lint:
