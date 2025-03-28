@@ -1,9 +1,19 @@
 name: third-action >> Events Demo 1
-on: # events & event types
+on: # events/types/filters
   pull_request:
     types: opened
+    branches:
+      - main
+      - 'dev-*' # single asterisk would not allow for slashes
+      - 'feat/**' # double asterisk allows for further slashes
   workflow_dispatch:
-
+  push:
+    branches:
+      - main
+      - 'dev-*' # single asterisk would not allow for slashes
+      - 'feat/**' # double asterisk allows for further slashes
+    paths-ignore:
+      - '.github/**' # ignore any changes to files in the .github directory
 jobs:
   deploy:
     runs-on: ubuntu-latest
