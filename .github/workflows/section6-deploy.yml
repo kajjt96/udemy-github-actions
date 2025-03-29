@@ -35,7 +35,8 @@ jobs:
         run: |
           cd section6
           npm test
-      - name: Output information
+      - name: Output information # there are also default env variables
+        # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
   deploy:
