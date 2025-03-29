@@ -29,7 +29,7 @@ jobs:
           npm ci
       - name: Run server
         run: |
-          cd sectoin6
+          cd section6
           npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests
         run: |
