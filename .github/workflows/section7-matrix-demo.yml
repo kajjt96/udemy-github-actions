@@ -19,10 +19,8 @@ jobs:
       - name: Install Dependencies
         run: |
           cd section7
-          ls
           npm ci
       - name: Build project
         run: |
           cd section7
-          ls
           npm run build
