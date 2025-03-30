@@ -11,16 +11,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Debugging
-        run: |
-          ls
       - name: Get Code
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.artifact_name }}
       - name: List files
-        run: |
-          cd section7
-          ls
+        run: ls
       - name: Output information
         run: echo "Deploying & uploading..."
