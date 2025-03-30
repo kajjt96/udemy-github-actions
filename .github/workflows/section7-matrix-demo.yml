@@ -24,4 +24,5 @@ jobs:
       - name: Build project
         run: |
           cd section7
+          ls
           npm run build
