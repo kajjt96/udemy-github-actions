@@ -1,4 +1,4 @@
-name: section7 >> continue
+name: section7 >> Continue Website Deployment
 on:
   workflow_dispatch:
   push:
