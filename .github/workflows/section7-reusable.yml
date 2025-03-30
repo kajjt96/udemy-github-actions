@@ -14,6 +14,7 @@ jobs:
       - name: Debugging
         run: |
           echo ${{inputs.artifact_name}}
+          cd section7
           ls
       - name: Get Code
         uses: actions/download-artifact@v4
