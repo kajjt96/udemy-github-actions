@@ -5,7 +5,7 @@ on:
       artifact_name:
         description: The name of the deployable artifact files
         required: false
-        default: 'section7/dist'
+        default: 'dist'
         type: string
 jobs:
   deploy:
@@ -13,7 +13,6 @@ jobs:
     steps:
       - name: Debugging
         run: |
-          echo "artifact_name = ${{inputs.artifact_name}}"
           ls
       - name: Get Code
         uses: actions/download-artifact@v4
