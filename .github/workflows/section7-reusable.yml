@@ -14,7 +14,7 @@ jobs:
       - name: Get Code
         uses: actions/download-artifact@v4
         with:
-          name: section7/${{ inputs.artifact_name }}
+          name: ${{ inputs.artifact_name }}
       - name: List files
         run: |
           cd section7
