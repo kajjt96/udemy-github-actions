@@ -80,10 +80,6 @@ jobs:
         with:
           name: dist-files
           path: section7/dist
-      - name: Sandbox
-        run: |
-          cd section7
-          ls
   deploy:
     needs: build
     runs-on: ubuntu-latest
