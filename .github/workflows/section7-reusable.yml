@@ -5,7 +5,7 @@ on:
       artifact_name:
         description: The name of the deployable artifact files
         required: false
-        default: 'dist'
+        default: 'section7/dist'
         type: string
 jobs:
   deploy:
