@@ -1,4 +1,4 @@
-name: Website Deployment
+name: section7 >> Website Deployment
 on:
   workflow_dispatch:
   push:
@@ -44,7 +44,7 @@ jobs:
           cd section7
           npm run test
       - name: Upload test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-report
           path: test.json
@@ -70,7 +70,7 @@ jobs:
           cd section7
           npm run build
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist-files
           path: dist
@@ -79,7 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get build artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist-files
       - name: Output contents
