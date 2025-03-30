@@ -11,6 +11,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Debugging
+        run: |
+          echo ${{inputs.artifact_name}}
+          ls
       - name: Get Code
         uses: actions/download-artifact@v4
         with:
