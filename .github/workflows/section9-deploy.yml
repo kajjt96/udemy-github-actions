@@ -81,7 +81,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with: 
           bucket: gha-custom-action-hosting-kj
-          dist-folder: section9/dist
+          dist-folder: dist
           # bucket-region: us-east-2
   # information:
   #   runs-on: ubuntu-latest
